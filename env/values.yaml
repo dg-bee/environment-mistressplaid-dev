@@ -1,3 +1,9 @@
+controllerbuild:
+  enabled: true
+controllerworkflow:
+  enabled: false
+jenkins:
+  enabled: false
 jenkins-x-platform:
   PipelineSecrets:
     DockerConfig: |-
@@ -12,3 +18,30 @@ jenkins-x-platform:
       }
   postinstalljob:
     enabled: "true"
+prow:
+  PipelineSecrets:
+    DockerConfig: |-
+      {
+          "credHelpers": {
+              "gcr.io": "gcr",
+              "us.gcr.io": "gcr",
+              "eu.gcr.io": "gcr",
+              "asia.gcr.io": "gcr",
+              "staging-k8s.gcr.io": "gcr"
+          }
+      }
+  auth:
+    git:
+      username: dg-bee
+  build:
+    enabled: false
+  buildnum:
+    enabled: false
+  pipelinerunner:
+    enabled: "true"
+  tillerNamespace: ""
+tekton:
+  auth:
+    git:
+      username: dg-bee
+  tillerNamespace: ""

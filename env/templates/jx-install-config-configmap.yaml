@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDCzCCAfOgAwIBAgIQcpa4JWbobvandQO/poaUjzANBgkqhkiG9w0BAQsFADAv
+    MS0wKwYDVQQDEyQyNGI4OGMwYy02OWI3LTRiMmYtOThjOS01Yzg5ZjBkYjdhZTUw
+    HhcNMTkwNTEzMDY1NjA2WhcNMjQwNTExMDc1NjA2WjAvMS0wKwYDVQQDEyQyNGI4
+    OGMwYy02OWI3LTRiMmYtOThjOS01Yzg5ZjBkYjdhZTUwggEiMA0GCSqGSIb3DQEB
+    AQUAA4IBDwAwggEKAoIBAQDbB4xT5FrbZuy9S+5Pk/XijeYaMJEyEMhL8C0fEBdF
+    xcXG3VK3vbdZNPp/DQD7vqI4AMB2IzOVLdVzeNylfEEnOcQVr9gpS1EWL1gdSy+p
+    FfPJ3Y0HPCyt9k+uubx/U0oTnzOU2C8WQfflePhjtKhkFwGLwR9ETgYHpQ1egUcd
+    Dw7dlnb5FMdSqHR4JBsUmgi7/zX5MW+JLOcJBT/6kYaUrE6PXFG2w+jTL/8SicR3
+    ZgXekYXh30vs/2xroiT/4e/qlFqmr95ogboo0C+bhqFL3Dk/dgjUsFfOGLWGsJFM
+    a5yBeVXmVGl87ZUiSAtXF2bCipGKuupynF4lWbWjJKwZAgMBAAGjIzAhMA4GA1Ud
+    DwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBr
+    BcceZ/UxqRUMemvpiTn+UnrqIdNgpy7ilx64Yp0hRNKPm3HjZ8p/Xf01tQxF3zHJ
+    /DWFX4ivtHLXbLhzuqBozJJzUh7bTOFzNxYHYSHV6Xy3PaSL6fRj0sI9iHhX9BNW
+    P4QhRsMWdV7wK27oPMkrdMwoGlta4YQFBBQN3jdtPJgMUpRG1UTslSviYlrgY9WU
+    bAJUrYqKrj9JwaoIRVFlejHK1xbH7Zq7jQrqAMrnrGB1vVJm057TZmZQylYjgvAv
+    bMpam7eqEEO63B5FkAGroKXNGZPA2Gl0cgkzhL80TB9d0atOQx9BP8ZIc0mkWTv+
+    lg2Id0gzOPybyiZ0YuiN
+    -----END CERTIFICATE-----
+  clusterName: mistressplaid
+  jx-install-version: 2.0.0-dev+5095ca6b6
+  kubeProvider: gke
+  projectID: apps-dev-229310
+  region: ""
+  secretsLocation: vault
+  server: https://35.240.19.203
+  systemVaultName: jx-vault-mistressplaid
+  zone: europe-west1-c
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
